@@ -76,5 +76,13 @@ body {
     75%  { color: black; }
     100% { color: rgb(0, 174, 255); }
   }
+
+  @media (max-width: 768px) {
+    .puerta-real .bienvenida {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   
-  
+  }
