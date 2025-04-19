@@ -78,11 +78,9 @@ body {
   }
 
   @media (max-width: 768px) {
-    .puerta-real .bienvenida {
+    .puerta-real {
       width: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      margin-top: 30%;
     }
   
   }
