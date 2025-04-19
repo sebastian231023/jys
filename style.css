@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffe6e6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.puerta-real {
+    width: 200px;
+    height: 350px;
+    background: linear-gradient(to bottom, #5a2d0c, #8b4513);
+    border: 5px solid #3e1f00;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: inset 0 0 5px #000, 0 8px 15px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .puerta-real:hover {
+    transform: scale(1.03);
+  }
+  
+  .panel {
+    margin: 0 auto;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .panel.medio {
+    font-size: 1.8em;
+  }
+  
+  .manija {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: gold;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #000;
+  }
+
+  .bienvenida {
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: cambiarColor 4s infinite alternate;
+  }
+  
+  @keyframes cambiarColor {
+    0%   { color: rgb(0, 174, 255); }
+    25%  { color: black; }
+    50%  { color: red; }
+    75%  { color: black; }
+    100% { color: rgb(0, 174, 255); }
+  }
+  
+  

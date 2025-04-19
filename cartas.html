@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartas</title>
+  <link rel="stylesheet" href="cartas.css">
+</head>
+<body>
+
+    <h1 class="bienvenida">10 Razones por el cual no dejaré que esto se acabe </h1>
+
+  <div class="cartas-grid">
+    <div class="carta"><div class="frente">1 ❤️</div><div class="dorso">Tu hermosa sonrisa me llena de vida 😚</div></div>
+    <div class="carta"><div class="frente">2 ❤️</div><div class="dorso">Eres única, la gente rara es difícl de encontrar 😅</div></div>
+    <div class="carta"><div class="frente">3 ❤️</div><div class="dorso">Me derrito cada vez que me ves con esos hermosos ojazos 🥴</div></div>
+    <div class="carta"><div class="frente">4 ❤️</div><div class="dorso">Admiro tu valentia al seguir adelante con esto 😘</div></div>
+    <div class="carta"><div class="frente">5 ❤️</div><div class="dorso">Muestras respeto hacia mi, y te haces respetar 😌</div></div>
+    <div class="carta"><div class="frente">6 ❤️</div><div class="dorso">Me brindas de tu confianza en una bandeja llena de amor 🥰</div></div>
+    <div class="carta"><div class="frente">7 ❤️</div><div class="dorso">Nos encontramos cuando menos lo esperabamos y eso no es algo común 🤗</div></div>
+    <div class="carta"><div class="frente">8 ❤️</div><div class="dorso">Haz sido mi primer amor verdadero, compartir mis sentimientos no era lo mio, pero llegaste tu 😘</div></div>
+    <div class="carta"><div class="frente">9 ❤️</div><div class="dorso">Si Dios lo permite seré tu esposo y el padre de tus hijos 🙌🙏</div></div>
+    <div class="carta"><div class="frente">10 ❤️</div><div class="dorso">Los detalles que me das, lo que demuestras a diario, hacen de ti a la mejor mujer de mi vida 🥰</div></div>
+  </div>
+
+  <button onclick="history.back()" class="volver">Volver atrás</button>
+
+  <script>
+    let cartaActiva = null;
+
+    document.querySelectorAll('.carta').forEach(carta => {
+      carta.addEventListener('click', () => {
+        if (cartaActiva && cartaActiva !== carta) {
+          cartaActiva.classList.remove('girada');
+        }
+
+        carta.classList.toggle('girada');
+        cartaActiva = carta.classList.contains('girada') ? carta : null;
+      });
+    });
+  </script>
+</body>
+</html>
