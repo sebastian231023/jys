@@ -61,9 +61,9 @@ body {
 
   .bienvenida {
     position: absolute;
-    top: 40px;
+    top: 30px;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     animation: cambiarColor 4s infinite alternate;
@@ -80,7 +80,7 @@ body {
   @media (max-width: 768px) {
     .puerta-real {
       width: 50%;
-      margin-top: 30%;
+      margin-top: 50%;
     }
   
   }
